@@ -5,9 +5,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+  color: #e0e0e0;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 header {
@@ -15,7 +17,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: white;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -29,20 +32,59 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-  font-size: 16px;
+  color: #e0e0e0;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: blue;
+  color: #4fc3f7;
+  transform: translateY(-3px);
 }
 
 .logo img {
   width: 250px;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .logo img:hover {
-  opacity: 0.5;
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  z-index: 1;
+}
+
+section h1, section p {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+section:hover {
+  animation: pulse 2s infinite;
 }
