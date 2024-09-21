@@ -12,6 +12,7 @@ body {
   text-align: center;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -20,6 +21,7 @@ header {
   background-color: #1e1e1e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 nav ul {
   list-style: none;
@@ -87,4 +89,196 @@ section h1, section p {
 
 section:hover {
   animation: pulse 2s infinite;
+}
+.Schools
+{ 
+  background-color: transparent;
+  text-align: center;
+  padding: 50px;
+}
+.Schools h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+.School-button-inline {
+  display: flex;
+  justify-content: left; 
+  align-items: center;               
+}
+
+.School-button {
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 50px 40px;  
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 300px; 
+  max-width: 300px;   
+  text-align: left; ;
+  margin:50px 100px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+.School-button::before{
+  opacity:0.3;
+}
+.AE{
+  background-image:url(Ae.jpeg);
+  background-size: cover;
+  
+}
+.CSE{
+  background-image: url(CS.jpeg);
+  color: aliceblue;
+  background-size: cover;
+}
+.B{
+  background-image: url(B.jpeg);
+  background-size: cover;
+}
+.L{
+  background-image: url(L.jpeg);
+  background-size: cover;
+  color: aliceblue;
+  font-size:15px;;
+}
+.HE{
+  background-image: url(HE.jpeg);
+  color: aliceblue;
+  background-size: cover;
+}
+.D{
+  background-image: url(D.jpeg);
+  background-size: cover;
+}
+.LS{
+  background-image: url(LS.jpeg);
+  background-size: cover;
+}
+.Li{
+  background-image: url(Li.jpeg);
+  background-size: cover;
+}
+.School-button:hover {
+  transform: scale(1.05); /* Slightly enlarge the button */
+  opacity: 0.9; /* Fades the button slightly */
+}
+
+.School-button:hover::before {
+  opacity: 0.6;
+}
+
+
+.campus-section {
+  text-align: center;
+  padding: 50px;
+  background-color:transparent;
+}
+
+.campus-section h2 {
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.campus-buttons-inline {
+  display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.campus-button {
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 15px 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  margin: 0 200px;
+}
+
+.kandoli {
+  background-color: transparent;
+}
+
+.bidholi {
+  background-color: transparent;
+}
+
+.campus-button:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+
+.bidholi:hover {
+  background-color: transparent; 
+}
+
+
+/* Footer Styles */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-item {
+  text-align: left;
+}
+
+.footer-item h3 {
+  font-size: 24px
+}
+
+.footer-item p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    text-align: left;
+    width: 25%;
+    padding: 20px;
+    border-left: 1px solid #e0e0e0;
+}
+
+.stat-item:first-child { border-left: none; }
+
+.stat-number {
+    font-size: 60px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    font-size: 18px;
+    color: aliceblue;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .stats-section { flex-direction: column; }
+
+    .stat-item {
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid #e0e0e0;
+        text-align: center;
+    }
+
+    .stat-number { font-size: 40px; }
+    .stat-text { font-size: 16px; }
 }
