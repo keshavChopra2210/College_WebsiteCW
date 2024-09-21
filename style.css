@@ -132,8 +132,8 @@ section:hover {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: 1; /* Reduce the opacity of the background image */
-  transition: opacity 0.4s ease; /* Smooth transition for opacity */
+  opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 /* Different button backgrounds */
