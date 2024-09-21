@@ -117,7 +117,7 @@ section:hover {
   max-width: 300px;
   text-align: left;
   margin: 50px 100px;
-  position: relative; /* Required for ::before pseudo-element */
+  position: relative;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -135,8 +135,6 @@ section:hover {
   opacity: 1;
   transition: opacity 0.4s ease;
 }
-
-/* Different button backgrounds */
 .AE::before {
   background-image: url('Ae.jpeg');
 }
@@ -169,13 +167,12 @@ section:hover {
   background-image: url('Li.jpeg');
 }
 
-/* Hover effect: Slight increase in size and image fades a bit more */
 .School-button:hover {
   transform: scale(1.05);
 }
 
 .School-button:hover::before {
-  opacity: 0.3; /* Further reduce the opacity on hover */
+  opacity: 0.3; 
 }
 
 
